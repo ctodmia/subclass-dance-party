@@ -1,19 +1,14 @@
-var makeWorryDancer = function(top, left, timeBetweenSteps){
+var makeRotatingDancer = function(top, left, timeBetweenSteps){
   makeDancer.call(this, top, left, timeBetweenSteps);
-     
-
-    
-
-  console.log('this', this);
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-  // this.$node = $('<span class="worry"></span>');
+  // this.$node = $('<span class="dancer"></span>');
   this.oldStep = this.step;
 };
 
-makeWorryDancer.prototype = Object.create(makeDancer.prototype);
-makeWorryDancer.prototype.step = function (){
+makeRotatingDancer.prototype = Object.create(makeDancer.prototype);
+makeRotatingDancer.prototype.step = function (){
 
       //call the old version of step at the beginning of any call to this new version of step
       //there is an old function of step that will be invocated on the prototype of our superclass.
@@ -27,6 +22,6 @@ makeWorryDancer.prototype.step = function (){
     setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
-makeWorryDancer.prototype.constructor = makeWorryDancer;
+makeRotatingDancer.prototype.constructor = makeRotatingDancer;
 
 // var blinkyDancer = new makeBlinkyDancer(20, 10, 4000);

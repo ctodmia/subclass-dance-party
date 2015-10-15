@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color:#fff;
+  
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,7 +22,17 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid orange;
   border-radius:10px;
   position:absolute;
 }
+
+/*.worry{
+  border:10px solid green;
+  border-radius:10px;
+
+  position:absolute;
+
+}*/
+
+
