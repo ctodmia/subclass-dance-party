@@ -12,6 +12,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 makeBlinkyDancer.prototype.step = function (){
 
       //call the old version of step at the beginning of any call to this new version of step
@@ -21,8 +22,10 @@ makeBlinkyDancer.prototype.step = function (){
      // See http://api.jquery.com/category/effects/ for this and
      // other effects you can use on a jQuery-wrapped html tag.
     this.$node.toggle();
-    console.log('toggle', this.$node.toggle());
+    setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
-var blinkyDancer = new makeBlinkyDancer(20, 10, 4000);
+makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+
+// var blinkyDancer = new makeBlinkyDancer(20, 10, 4000);
 
