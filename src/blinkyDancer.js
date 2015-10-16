@@ -11,20 +11,11 @@ BlinkyDancer.prototype = Object.create(Dancer.prototype);
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function (){
-    Dancer.prototype.step.call(this)
-
-  
-
-      //call the old version of step at the beginning of any call to this new version of step
-      //there is an old function of step that will be invocated on the prototype of our superclass.
-    // this.oldStep();
-      //toggle() is a jQuery method to show/hide the <span> tag.
-     // See http://api.jquery.com/category/effects/ for this and
-     // other effects you can use on a jQuery-wrapped html tag.
-    // setTimeout(this.step.bind(this), this.timeBetweenSteps);
-    
+    Dancer.prototype.step.call(this);
 };
-
+BlinkyDancer.prototype.lineUp = function (){
+  Dancer.prototype.lineUp.call(this);
+}
 
 
 
