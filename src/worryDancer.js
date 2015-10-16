@@ -1,6 +1,6 @@
 var WorryDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="worry"></span>');
+  this.$node = $('<span class="worry"><img src="deadpool.gif"> </span>');
     this.setPosition(top,left); 
     
 

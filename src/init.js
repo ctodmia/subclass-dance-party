@@ -41,6 +41,13 @@ $(".lineUp").on("click", function(){
 
  }
 
+for (var i=0; i<window.dancers.length; i++){
+  $("span").on("mouseover", function (){
+    $('span').css({left:"0"});
+
+  });
+}
+
 
 });
 

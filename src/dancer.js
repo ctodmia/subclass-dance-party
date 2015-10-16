@@ -42,6 +42,8 @@ Dancer.prototype.lineUp = function(){
   this.setPosition(0,0);
 
 }
+
+
   // now that we have defined the Dancer object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body
   

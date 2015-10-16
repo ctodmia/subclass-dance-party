@@ -3,8 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
+  background-image: url("java.jpg");
   background-color:#fff;
-  width: 1725px;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -38,10 +38,12 @@ body, a:link, a:visited, a:active{
   position:absolute;
 
 }
-/*.worry{
+.worry{
 
   position:absolute;
   
 
-}*/
+}
+.lineUP{
 
+}
