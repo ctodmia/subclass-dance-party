@@ -6,7 +6,7 @@ describe("rotatingDancer", function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    rotatingDancer = new makeRotatingDancer(10, 20, timeBetweenSteps);
+    rotatingDancer = new RotatingDancer(10, 20, timeBetweenSteps);
   });
 
   it("should have a jQuery $node object", function(){
@@ -14,9 +14,9 @@ describe("rotatingDancer", function() {
   });
 
   it("should have a step function that makes its node change colors", function() {
-    sinon.spy(rotatingDancer.$node, 'css');
+    sinon.spy(rotatingDancer.$node, 'toggle');
     rotatingDancer.step();
-    expect(rotatingDancer.$node.css.called).to.be.true;
+    expect(rotatingDancer.$node.toggle.called).to.be.true;
   });
 
   describe("dance", function(){

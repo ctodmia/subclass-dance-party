@@ -4,7 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-color:#fff;
-  
+  width: 1725px;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -16,6 +16,7 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
+  padding-right: 50px;
   background-color: #555;
 }
 .title{
@@ -27,12 +28,23 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-/*.worry{
-  border:10px solid green;
-  border-radius:10px;
+.blinky{
 
   position:absolute;
 
-}*/
+}
+.rotating{
 
+  position:absolute;
 
+}
+.worry{
+
+  position:absolute;
+  
+
+}
+img .deadpool{
+  height: 200px;
+  width: 200px;
+}
